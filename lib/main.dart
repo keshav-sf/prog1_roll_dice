@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prog1_roll_dice/styled_text.dart';
+import 'package:prog1_roll_dice/roll_dice.dart';
 
 void main() {
   runApp(
@@ -9,7 +10,7 @@ void main() {
         decoration: const BoxDecoration(
             gradient: LinearGradient(
           colors: [
-            Colors.blue,
+            Colors.purple,
             Colors.blueGrey,
           ],
         )),
@@ -18,6 +19,7 @@ void main() {
             mainAxisSize: MainAxisSize.min,
             children: [
               StyledText("Roll The Dice!"),
+              const RollDice(),
             ],
           ),
         ),

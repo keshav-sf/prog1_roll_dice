@@ -6,9 +6,13 @@ class StyledText extends StatelessWidget {
   String data;
   @override
   Widget build(context) {
-    return Text(
-      data,
-      style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+    return Padding(
+      padding: const EdgeInsets.all(30.0),
+      child: Text(
+        data,
+        style: const TextStyle(
+            color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+      ),
     );
   }
 }
